@@ -115,7 +115,7 @@ while not should_end:
                         print("\nGAME OVER! You Win!\n")
         elif computer_sum <= 21:
             if player_sum == 21:
-                print("\nGAME OVER! You Win!\n")
+                print("\nBlack Jack! You Win!\n")
                 computer_draw_card = False
             elif player_sum == 20:
                 if computer_sum == 21:
