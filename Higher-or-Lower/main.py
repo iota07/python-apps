@@ -1,4 +1,4 @@
-from art import logo
+from art import logo, vs
 from game_data import data
 import random
 
@@ -22,7 +22,7 @@ while still_going:
     for key in desired_keys:
         value = remaining.get(key)
         print(f"    {key}: {value}")
-    print("\n & \n")
+    print(f"\n{vs}\n")
 
     for key in desired_keys:
         value = second_random.get(key)
@@ -45,9 +45,10 @@ while still_going:
         second_random = random.choice(data)
 
     if guess == answer:
+        print(chr(27) + "[2J")
         print("Correct!")
         print("\nNEXT ONE:\n")
         PLAYER_POINTS += 1
     else:
-        print(f"\nGAME OVER! You got {PLAYER_POINTS} points")
+        print(f"\nGAME OVER! You got {PLAYER_POINTS} points\n")
         still_going = False
