@@ -22,7 +22,7 @@ Dr. Angela Yu
 - Tip calculator: split the bill including the tip or not
 - Treasure Island: find the treasure game.
 - General quiz: quiz of 20 questions from Trivia Database API
-- Coffee Machine: simple program to run a coffee machine user USD coins.
+- Coffee Machine: simple program to run a coffee machine using USD coins.
 
 ###
 
